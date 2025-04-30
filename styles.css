@@ -1,0 +1,340 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+/* Banner样式 */
+.banner {
+    background-color: #000;
+    padding: 20px;
+    height: 140px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.logo-title {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.logo-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-wrapper img{
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+.logo-wrapper span{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.logo-title h1 {
+    font-size: 28px;
+    color: #D4AF37;
+}
+
+.rules {
+    color: #fff;
+    font-size: 14px;
+    opacity: 0.8;
+    /* 设置文本的书写模式为垂直方向，从右向左排列 */
+    writing-mode: vertical-rl;
+    /* 字符之间的间距为 2 像素 */
+    letter-spacing: 2px;
+    padding: 10px 0;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+/* 主导航样式 */
+.main-nav {
+    background-color: transparent;
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: rgba(255,255,255,0.5);
+    font-size: 16px;
+    padding: 8px 16px;
+    width: 80px;
+    text-align: center;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+}
+
+.nav-item.active {
+    color: #D4AF37;
+    background-color: rgba(212,175,55,0.1);
+}
+
+/* 目的地特殊处理 */
+.nav-item:last-child {
+    width: 100px;
+}
+
+/* 子导航样式 */
+.sub-nav {
+    padding: 10px 20px;
+}
+
+.tag-list {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    align-items: center;
+}
+
+.tag-list a {
+    text-decoration: none;
+    color: #999;
+    font-size: 14px;
+}
+
+.tag-list a.highlight {
+    color: #fff;
+    font-weight: 500;
+}
+
+.more-btn {
+    color: #666;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+/* 筛选区域样式 */
+.filter-section {
+    padding: 10px 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.filter-options {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.filter-btn {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 14px;
+    padding: 5px 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.separator {
+    color: #333;
+}
+
+/* 内容区域样式 */
+.content {
+    padding: 16px;
+}
+
+/* 卡片样式 */
+.card {
+    background: #1a1a1a;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+}
+
+.rank-badge {
+    position: absolute;
+    z-index: 2;
+    background: url('./figure/rank-badge.png') no-repeat;
+    width: 30px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rank-badge span {
+    color: #000;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.card-image {
+    position: relative;
+    width: 100%;
+    height: 200px;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-dots {
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 6px;
+}
+
+.dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.5);
+}
+
+.dot.active {
+    background: #fff;
+}
+
+.card-content {
+    padding: 16px;
+}
+
+.title-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.title-section h2 {
+    font-size: 20px;
+    color: #fff;
+}
+
+.hot-icon {
+    background: #ff4e4e;
+    color: #fff;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+.rating-location {
+    margin-bottom: 16px;
+}
+
+.rating {
+    color: #ff4e4e;
+    font-weight: bold;
+    margin-right: 12px;
+}
+
+.location {
+    color: #999;
+    font-size: 14px;
+}
+
+.reasons {
+    margin-bottom: 16px;
+}
+
+.reasons h3 {
+    color: #999;
+    font-size: 14px;
+    font-weight: normal;
+    margin-bottom: 8px;
+}
+
+.reasons ul {
+    list-style: none;
+}
+
+.reasons li {
+    color: #999;
+    font-size: 14px;
+    margin-bottom: 4px;
+    padding-left: 16px;
+    position: relative;
+}
+
+.reasons li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 8px;
+    width: 4px;
+    height: 4px;
+    background: #999;
+    border-radius: 50%;
+}
+
+.stats {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 12px;
+}
+
+.stats span {
+    color: #999;
+    font-size: 13px;
+}
+
+.badge {
+    display: inline-block;
+    background: rgba(255,255,255,0.1);
+    color: #999;
+    font-size: 12px;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+/* 移动端适配 */
+@media screen and (max-width: 768px) {
+    .nav-container {
+        gap: 10px;
+        padding: 0 10px;
+    }
+
+    .nav-item {
+        padding: 8px 12px;
+        width: auto;
+        min-width: 60px;
+        font-size: 14px;
+        writing-mode: horizontal-tb !important;
+    }
+
+    .nav-item:last-child {
+        width: auto;
+        min-width: 70px;
+    }
+}
