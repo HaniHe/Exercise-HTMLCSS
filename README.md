@@ -4,7 +4,9 @@
 
 ## 界面展示
 1.原始界面
+
 ![Uploading image.png…](https://github.com/HaniHe/HTML-exercise/blob/main/figure/originInterface.jpg?raw=true)
 
 2.完成界面
+
 ![Uploading image.png…](https://github.com/HaniHe/HTML-exercise/blob/main/figure/public%20praise%20list.png?raw=true)
