@@ -7,82 +7,129 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="banner">
-        <div class="logo-title">
-            <div class="logo-wrapper">
-                <img src="./figure/logo.png" alt="携程口碑榜">
-                <span>携程口碑榜</span>
+    <header class="header">
+        <div class="banner">
+            <div class="logo-title">
+                <div class="logo-wrapper">
+                    <img src="./figure/logo.png" alt="携程口碑榜">
+                    <span>携程口碑榜</span>
+                </div>
+                <h1>2025全球100</h1>
             </div>
-            <h1>2025全球100</h1>
+            <div class="rules">评选规则</div>
         </div>
-        <div class="rules">评选规则</div>
-    </div>
-    
-    <nav class="main-nav">
-        <div class="nav-container">
-            <a href="#hotels" class="nav-item">酒店</a>
-            <a href="#attractions" class="nav-item active">景点</a>
-            <a href="#nightlife" class="nav-item">夜游</a>
-            <a href="#food" class="nav-item">美食</a>
-            <a href="#destinations" class="nav-item">目的地</a>
+        
+        <nav class="main-nav">
+            <div class="nav-container">
+                <a href="#hotels" class="nav-item">酒店</a>
+                <a href="#attractions" class="nav-item active">景点</a>
+                <a href="#nightlife" class="nav-item">夜游</a>
+                <a href="#food" class="nav-item">美食</a>
+                <a href="#destinations" class="nav-item">目的地</a>
+            </div>
+        </nav>
+        
+        <nav class="sub-nav">
+            <ul class="tag-list">
+                <li><a href="#must-visit" class="highlight">必打卡</a></li>
+                <li><a href="#family">亲子</a></li>
+                <li><a href="#spring">赏花踏青</a></li>
+                <li><a href="#summer">玩水避暑</a></li>
+                <li><a href="#autumn">赏秋</a></li>
+                <li><a href="#more" class="more-btn">▼</a></li>
+            </ul>
+        </nav>
+        
+        <div class="filter-section">
+            <div class="filter-options">
+                <button class="filter-btn">全球 ▼</button>
+                <span class="separator">|</span>
+                <button class="filter-btn">位置/区域 ▼</button>
+            </div>
         </div>
-    </nav>
-    
-    <nav class="sub-nav">
-        <ul class="tag-list">
-            <li><a href="#must-visit" class="highlight">必打卡</a></li>
-            <li><a href="#family">亲子</a></li>
-            <li><a href="#spring">赏花踏青</a></li>
-            <li><a href="#summer">玩水避暑</a></li>
-            <li><a href="#autumn">赏秋</a></li>
-            <li><a href="#more" class="more-btn">▼</a></li>
-        </ul>
-    </nav>
-    
-    <div class="filter-section">
-        <div class="filter-options">
-            <button class="filter-btn">全球 ▼</button>
-            <span class="separator">|</span>
-            <button class="filter-btn">位置/区域 ▼</button>
-        </div>
-    </div>
+    </header>
 
     <main class="content">
-        <div class="card">
-            <div class="rank-badge">
-                <span>No.1</span>
-            </div>
-            <div class="card-image">
-                <img src="./figure/lufugong.jpg" alt="卢浮宫及其玻璃金字塔倒影">
-                <div class="image-dots">
-                    <span class="dot active"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
+        <div class="content-grid">
+            <div class="card">
+                <div class="rank-badge">
+                    <span>No.1</span>
+                </div>
+                <div class="card-image">
+                    <img src="./figure/lufugong.jpg" alt="卢浮宫及其玻璃金字塔倒影">
+                    <div class="image-dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <div class="title-section">
+                        <h2>卢浮宫 Musée du Louvre</h2>
+                        <span class="hot-icon">10</span>
+                    </div>
+                    <div class="rating-location">
+                        <span class="rating">4.7分</span>
+                        <span class="location">法国·巴黎</span>
+                    </div>
+                    <div class="reasons">
+                        <h3>上榜理由：</h3>
+                        <ul>
+                            <li>穿梭卢浮宫展厅赏艺术珍品</li>
+                            <li>巨型玻璃金字塔探秘</li>
+                        </ul>
+                    </div>
+                    <div class="stats">
+                        <span>7820人收藏</span>
+                        <span>5096人好评</span>
+                    </div>
+                    <div class="badge">口碑榜·连续2年入选年度榜</div>
                 </div>
             </div>
-            <div class="card-content">
-                <div class="title-section">
-                    <h2>卢浮宫 Musée du Louvre</h2>
-                    <span class="hot-icon">10</span>
+            <div class="card">
+                <div class="rank-badge">
+                    <span>No.2</span>
                 </div>
-                <div class="rating-location">
-                    <span class="rating">4.7分</span>
-                    <span class="location">法国·巴黎</span>
+                <div class="card-image">
+                    <img src="./figure/disney.jpg" alt="华特迪士尼">
+                    <div class="image-dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
                 </div>
-                <div class="reasons">
-                    <h3>上榜理由：</h3>
-                    <ul>
-                        <li>穿梭卢浮宫展厅赏艺术珍品</li>
-                        <li>巨型玻璃金字塔探秘</li>
-                    </ul>
+                <div class="card-content">
+                    <div class="title-section">
+                        <h2>华特迪士尼</h2>
+                        <span class="hot-icon">10</span>
+                    </div>
+                    <div class="rating-location">
+                        <span class="rating">4.7分</span>
+                        <span class="location">美国·湾湖</span>
+                    </div>
+                    <div class="reasons">
+                        <h3>上榜理由：</h3>
+                        <ul>
+                            <li>灰姑娘城堡梦幻拍照打卡地</li>
+                            <li>3跳路线单轨单车畅游迪士尼世界</li>
+                        </ul>
+                    </div>
+                    <div class="stats">
+                        <span>灰姑娘城堡（92提及）</span>
+                        <span>1999人收藏</span>
+                    </div>
+                    <div class="badge">口碑榜·连续2年入选年度榜</div>
                 </div>
-                <div class="stats">
-                    <span>7820人收藏</span>
-                    <span>5096人好评</span>
-                </div>
-                <div class="badge">口碑榜·连续2年入选年度榜</div>
             </div>
+            <!-- 可以在这里添加更多卡片 -->
         </div>
     </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>© 2025 携程口碑榜 - 全球100</p>
+            <p>数据仅供参考，最终解释权归携程所有</p>
+        </div>
+    </footer>
 </body>
-</html> 
+</html>
